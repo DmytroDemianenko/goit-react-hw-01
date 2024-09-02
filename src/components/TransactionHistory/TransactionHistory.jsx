@@ -1,10 +1,8 @@
-// import TransactionsItem from "./TransactionItem";
+import s from "./TransactionHistory.module.css";
 export default function TransactionHistory({ items }) {
-  // const keys = Object.keys(items);
-  // console.log(items);
   return (
-    <table>
-      <thead>
+    <table className={s.wrapper}>
+      <thead className={s.tableHead}>
         <tr>
           <th>Type</th>
           <th>Amount</th>

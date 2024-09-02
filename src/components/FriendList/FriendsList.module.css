@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  justify-content: space-between;
+}
+.thumb {
+  flex-direction: row;
+  /* display: block; */
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(230, 230, 230);
+}
