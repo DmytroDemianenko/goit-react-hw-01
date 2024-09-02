@@ -5,3 +5,6 @@
 .tableHead {
   background-color: #7b7878;
 }
+.rowItem {
+  text-transform: capitalize;
+}
