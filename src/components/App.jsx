@@ -8,14 +8,13 @@ import TransactionHistory from "./TransactionHistory/TransactionHistory";
 import transactions from "./transactions.json";
 
 function App() {
-  // console.log(transactions);
   return (
     <>
       <Profile
         username={userData.username}
         tag={userData.tag}
         location={userData.location}
-        avatar={userData.avatar}
+        image={userData.avatar}
         stats={userData.stats}
       />
       <FriendList friends={friends} />
