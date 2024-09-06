@@ -2,10 +2,12 @@ import s from "./FriendsList.module.css";
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <>
-      <div className={s.thumd}>
+      <div className={s.thumb}>
         <img src={avatar} alt="Avatar" width="48" />
         <p> {name}</p>
-        <p>{(isOnline && "Online") || "Offline"}</p>
+        <p className={(isOnline && s.statusActive) || s.status}>
+          {(isOnline && "Online") || "Offline"}
+        </p>
       </div>
     </>
   );

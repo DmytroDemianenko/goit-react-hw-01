@@ -3,12 +3,21 @@
   padding: 20px;
   gap: 20px;
   justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px auto;
+  background-color: #fff;
 }
 .thumb {
   flex-direction: row;
-  /* display: block; */
   border: 2px solid black;
   border-radius: 10px;
-  padding: 20px;
+  padding: 10px;
   background-color: rgb(230, 230, 230);
+}
+.status {
+  color: red;
+}
+.statusActive {
+  color: green;
 }

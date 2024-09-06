@@ -6,26 +6,33 @@ const Profile = ({ username, tag, location, image, stats }) => {
         <img
           className={s.picture}
           src={image}
-          width="200px"
+          width="100px"
+          height="100px"
           alt="User avatar"
         />
-        <h2>{username}</h2>
-        <p>@{tag}</p>
-        <p>{location}</p>
+        <h2 className={s.title}>{username}</h2>
+        <p className={s.tag}>@{tag}</p>
+        <p className={s.location}>{location}</p>
       </div>
       <div>
         <ul className={s.stats}>
-          <li className={s.stats_item}>
-            <span>Followers</span>
-            <span>{stats.followers}</span>
+          <li>
+            <div className={s.stats_item}>
+              <span className={s.label}>Followers</span>
+              <span className={s.quantity}>{stats.followers}</span>
+            </div>
           </li>
-          <li className={s.stats_item}>
-            <span>Views</span>
-            <span>{stats.views}</span>
+          <li>
+            <div className={s.stats_item}>
+              <span className={s.label}>Views</span>
+              <span className={s.quantity}>{stats.views}</span>
+            </div>
           </li>
-          <li className={s.stats_item}>
-            <span>Likes</span>
-            <span>{stats.likes}</span>
+          <li>
+            <div className={s.stats_item}>
+              <span className={s.label}>Likes</span>
+              <span className={s.quantity}>{stats.likes}</span>
+            </div>
           </li>
         </ul>
       </div>

@@ -1,5 +1,5 @@
 .wrapper {
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 15px;
   align-content: center;
   background-color: rgb(245, 242, 238);
@@ -7,16 +7,39 @@
 .thumb {
 }
 .picture {
+  background-color: rgb(54, 51, 51);
   border-radius: 50%;
+  margin: 0 auto;
 }
 .stats {
   display: flex;
-  width: 100%;
+  justify-content: space-around;
+  margin: 0;
+  height: auto;
 }
 .stats_item {
+  flex-direction: column;
   justify-content: space-between;
-  border: 1px solid black;
+  padding: 10px;
 }
-/* li {
-  border: 1px solid black;
-} */
+.title {
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.tag {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(135, 135, 133);
+}
+.location {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgb(124, 124, 117);
+}
+.label {
+  display: block;
+}
+.quantity {
+  font-weight: 800;
+}
